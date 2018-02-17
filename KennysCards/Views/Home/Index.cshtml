@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="~/public/css/index.css">
+    <script src="~/public/js/receptive.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="~/public/js/router.js"></script>
+    <script src="~/public/js/event.js"></script>
+    <title>Index</title>
+</head>
+<body ng-app="main">
+    <div class="w3-bar w3-black">
+        <a href="#!home" id="homeButton" class="w3-blue-grey w3-bar-item w3-button w3-left w3-margin-left w3-text-black">Inicio</a>
+        <a href="#!signup" class="w3-brown w3-bar-item w3-button w3-right w3-margin-right w3-text-teal w3-hide-small">Registrate</a>
+        <a href="#!signin" class="w3-bar-item w3-button w3-right w3-text-teal w3-hide-small">Iniciar sesión</a>
+        <h5 class="w3-bar-item w3-margin-left w3-text-teal"><b>Kenny's Cards</b></h5>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="showMenuBar()">&#9776;</a>
+    </div>
+    <div id="menuBar" class="w3-bar-block w3-gray w3-hide w3-hide-large w3-hide-medium">
+        <a href="#!signup" class="w3-bar-item w3-button">Registrarte</a>
+        <a href="#!signin" class="w3-bar-item w3-button">Iniciar sesión</a>
+    </div>
+
+    <div>
+        <div ng-view></div>
+    </div>
+</body>
+</html>
+

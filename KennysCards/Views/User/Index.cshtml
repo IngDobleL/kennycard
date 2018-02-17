@@ -1,0 +1,37 @@
+﻿@model KennysCards.Models.User
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="~/public/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/public/js/logo.js"></script>
+    <title>Kenny's Cards</title>
+</head>
+<body>
+    <div class="w3-bar w3-black">
+        <a href="#!home" id="homeButton" class="w3-blue-grey w3-bar-item w3-button w3-left w3-margin-left w3-text-black">Inicio</a>
+        <p class="w3-brown w3-bar-item w3-button w3-right w3-margin-right w3-text-teal w3-hide-small"></p>
+        <img id="avatar" href="#" />
+        <h5 class="w3-bar-item w3-margin-left w3-text-teal"><b>Kenny's Cards</b></h5>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="showMenuBar()">&#9776;</a>
+    </div>
+    <div id="menuBar" class="w3-bar-block w3-gray w3-hide w3-hide-large w3-hide-medium">
+        <p class="w3-bar-item"></p>
+        <img id="avatar" href="#" />
+    </div>
+
+    <h1 class="w3-container">Bienvenido a Kenny's Cards</h1>
+    <div>
+        <div>
+            <canvas id="logo" width="200" height="50"></canvas>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿@model KennysCards.Models.Signup
+
+
+<div class="w3-display-container" style="height:600px">
+    <div class="w3-card-4 w3-display-middle w3-half">
+        <form id="formsignin" class="w3-padding-16">
+            @Html.LabelFor(m => m.Email, new { @class = "w3-input" })
+            @Html.TextBoxFor(m => m.Email, new { @class = "w3-input", @placeholder="Correo electrónico"})
+
+            @Html.LabelFor(m => m.User, new { @class = "w3-input" })
+            @Html.TextBoxFor(m => m.User, new { @class = "w3-input", @placeholder = "Nombre de usuario"})
+
+            @Html.LabelFor(m => m.Password1, new { @class = "w3-input" })
+            @Html.PasswordFor(m => m.Password1, new { @class = "w3-input", @placeholder = "Contraseña" })
+
+            @Html.LabelFor(m => m.Password2, new { @class = "w3-input" })
+            @Html.PasswordFor(m => m.Password2, new { @class = "w3-input", @placeholder = "Repita su contraseña"})
+            <br />
+            <button class="w3-btn w3-brown">Registrarte</button></p>
+        </form>
+    </div>
+</div>
